@@ -51,6 +51,7 @@
 - “g”组内成员。
 - “o”其他人。
 - “a”表示所有人。
+
 示例:
 - 删除其他人ip6addrctl.conf文件的读取权限，`chmod o-r ip6addrctl.conf`，结果”-rw-r-----   1 XiaoXiang  staff        304  6  7 12:41 ip6addrctl.conf”。
 - 增加其他人ip6addrctl.conf 文件的读取和写入权限，`chmod o+rw ip6addrctl.conf`，结果”-rw-r--rw-   1 XiaoXiang  staff        304  6  7 12:41 ip6addrctl.conf”。
