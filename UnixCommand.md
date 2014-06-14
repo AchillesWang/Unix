@@ -172,11 +172,29 @@
 
 ###### sleep(睡眠)
 * "&"后台执行
-##### find(搜索)
+###### find(搜索)
+
 "find 目录 条件 [处理命令]"
 * "-name"名称搜索
 * "-exec"命令
 示例:
+
 1. "find / Yosemite"
 2. "find . -name "*.md" -exec cp {} Desktop/test/"
 3. "find  Desktop/test -name "*.md" -exec rm -i {} \;"
+###### who(检查谁在使用这台主机)
+* "who am i"
+* "whoami"
+* "who | grep 192.168.1."
+###### users(检查谁在使用这台主机,User name)
+###### w(User detail infomation)
+###### history
+* "! 356"
+###### du
+* "du ~"
+* "du -h"
+* "du -hs  Desktop/"
+###### df
+* "df -h"
+###### ifconfig
+* "ifconfig -a"
