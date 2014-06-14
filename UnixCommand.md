@@ -123,12 +123,14 @@
 
 ###### cal(日历)
 示例:
+
 1. cal
 2. cal 2013
 3. cal 11 2013
 
 ###### echo(输出输入的内容)
 示例:
+
 1. echo wxx
 2. echo “wxx wxk                hx”
 2. echo wxx\>\>xyz
@@ -137,6 +139,7 @@
 
 ###### mv(移动)
 示例:
+
 1. mv 1.jpg  美女/范冰冰
 2. mv 美女/范冰冰/1.jpg  美女/fbb.png
 3. mv 美女 girl(改名)
@@ -169,3 +172,11 @@
 
 ###### sleep(睡眠)
 * "&"后台执行
+##### find(搜索)
+"find 目录 条件 [处理命令]"
+* "-name"名称搜索
+* "-exec"命令
+示例:
+1. "find / Yosemite"
+2. "find . -name "*.md" -exec cp {} Desktop/test/"
+3. "find  Desktop/test -name "*.md" -exec rm -i {} \;"
