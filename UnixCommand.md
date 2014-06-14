@@ -135,7 +135,11 @@
 2. echo “wxx wxk                hx”
 2. echo wxx\>\>xyz
 3. echo wxx\>\>xyz;cat xyz
-“/dev/tty”这个文件代表终端, “/dev/null”空文件，无论写入什么都会消失。
+4. "echo 我草你大爷`date`"
+5. echo $HOME(显示环境变量的值)
+
+
+"dev/tty”这个文件代表终端, “/dev/null”空文件，无论写入什么都会消失。
 
 ###### mv(移动)
 示例:
@@ -198,3 +202,27 @@
 * "df -h"
 ###### ifconfig
 * "ifconfig -a"
+
+###### env(环境变量)
+* "PS1"命令提示符(XiaoXiangdeiMac:~ XiaoXiang$)
+* "PS1=汪潇翔"
+* "PS1="\h:\W \u\$""
+* "PATH=$PATH:."(添加当前目录到PATH中,暂时有效	)
+
+###### which(命令的执行路径)
+* "which cal"
+
+###### whereis(命令的存放路径)
+* "whereis cal"
+###### alias(别名)
+* "alias ls='ls -G'"
+###### source(执行sh)
+* "source my.sh"
+* "my.sh"
+`#! /bin/bash
+echo No no no!
+sleep 2
+echo Ye ye ye!
+sleep 2
+echo $USER
+date`
